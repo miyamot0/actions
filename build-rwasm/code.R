@@ -24,7 +24,8 @@ gha_dir <- file.path("/github/workspace")
 packages <- args[3]
 strip <- args[4]
 
-packages <- strsplit(packages, "[[:space:],]+")[[1]]
+# Note: just add in fxl?
+packages <- c(strsplit(packages, "[[:space:],]+")[[1]], "fxl")
 strip <- strsplit(strip, "[[:space:],]+")[[1]]
 if (is.character(strip) && length(strip) == 1 && strip == "NULL") strip <- NULL
 

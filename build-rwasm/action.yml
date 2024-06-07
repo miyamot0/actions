@@ -4,7 +4,6 @@ description: 'Build wasm packages using r-wasm/rwasm'
 inputs:
   packages:
     description: A string of R package references.
-    default: "fxl"
     required: true
   strip:
     description: |
