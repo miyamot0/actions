@@ -8,7 +8,7 @@ inputs:
   strip:
     description: |
       A set of [directories to remove](https://r-wasm.github.io/rwasm/reference/make_library.html#details) when building the WebAssembly R package library image, or `NULL` to remove nothing (the default). To achieve a smaller bundle size, it is recommended to set `strip` to `"demo, doc, examples, help, html, include, tests, vignette"`.
-    default: "NULL"
+    default: "demo, doc, examples, help, html, include, tests, vignette"
     required: false
   image-path:
     description: Directory where the R package library filesystem image files should be saved.
